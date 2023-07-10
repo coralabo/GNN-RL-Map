@@ -70,7 +70,7 @@ The following is an explanation of some key parameters
 @inproceedings{zhuang2022towards,
   title={Towards High-Quality CGRA Mapping with Graph Neural Networks and Reinforcement Learning},
   author={Zhuang, Yan and Zhang, Zhihao and Liu, Dajiang},
-  booktitle={Proceedings of the 41st IEEE/ACM International Conference on Computer-Aided Design},
+  booktitle={Proceedings of the 41st IEEE/ACM International Conference on Computer-Aided Design (ICCAD)},
   pages={1--9},
   year={2022}
 }
