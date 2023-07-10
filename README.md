@@ -62,7 +62,7 @@ The following is an explanation of some key parameters
 * reward_mode(Indicates the CGRA structure, 1 indicates the mesh structure, 2 indicates the torus structure, 3 indicates the Diagonal structure, and 4 indicates the 1-HOP structure)
 * max_LRF(the number of LRF resources in one FU)
 * max_memory(the number of LSU resources in a time slot)
-* 10. max_GRF(the number of GRF resources in a time slot)
+* max_GRF(the number of GRF resources in a time slot)
 
 # Publication
 
