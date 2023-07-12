@@ -8,8 +8,9 @@ GNN-RL-Map is a high-quality mapper to map data flow graphs (DFGs) to CGRAs. It 
     1. [Directory Structure](#directory-structure)
 2. [Getting Started](#getting-started)
     1. [Requirement](#requirement)
-    2. [Running Example](#running-example)
+    2. [Running example](#running-example)
     3. [Modify the parameters](#modify-the-parameters)
+    4. [Data formats](#data-formats)
 3. [Reference](#publication)
 
 
@@ -74,15 +75,16 @@ Each line of the input file indicates a node in a DFG, which includes 13 segment
 
 For example (text.txt): \
 <img src="DFG.png" alt="drawing" width="100"/> \
-it should be: \
-1,2,0,4,0,0,0,0,0,0,0,0,0 \
-2,3,0,0,0,0,0,0,0,1,1,0,1 \
-3,4,0,5,0,0,0,0,0,2,2,0,1 \
-4,5,0,0,0,0,0,0,0,3,3,0,1 \
-5,0,0,0,0,0,0,0,0,4,4,0,1 \
+the input data file should be:
+```
+1,2,0,4,0,0,0,0,0,0,0,0,0
+2,3,0,0,0,0,0,0,0,1,1,0,1
+3,4,0,5,0,0,0,0,0,2,2,0,1
+4,5,0,0,0,0,0,0,0,3,3,0,1
+5,0,0,0,0,0,0,0,0,4,4,0,1
 6,3,0,0,0,0,0,0,0,0,1,0,0
-
-# Publication
+```
+# Reference
 
 ```
 @inproceedings{zhuang2022towards,
