@@ -65,16 +65,22 @@ The following is an explanation of some key parameters
 * max_GRF(the number of GRF resources in a time slot)
 
 ## Data Formats
-The first column indicates the node number and the middle 8 columns are 4 child node numbers and corresponding edge types, and the next two columns represent ASAP and ALAP for the node, The last two columns indicate the route information and whether the entry degree is zero(0 indicates true,1 indicates false).
+Each line of the input file indicates a node in a DFG, which includes 13 segments defined as follows:
+```
+|----------|------------|-------------|------------|-------------|------------|-------------|------------|-------------|---------------------|-------------------|----------------|---------------|
+|node index|child node 1|edge 1's type|child node 2|edge 2's type|child node 3|edge 3's type|child node 4|edge 4's type|earliest control step|latest control step|is routing node?|zero in-degree?|
+|----------|------------|-------------|------------|-------------|------------|-------------|------------|-------------|---------------------|-------------------|----------------|---------------|
+```
 
 For example: \
 <img src="DFG.png" alt="drawing" width="100"/> \
 it should be: \
-1 2 0 5 0 0 0 0 0 0 0 0 0 \
-2 3 0 4 0 0 0 0 0 1 1 0 1 \
-3 4 0 0 0 0 0 0 0 2 2 0 1 \
+1 2 0 4 0 0 0 0 0 0 0 0 0 \
+2 3 0 0 0 0 0 0 0 1 1 0 1 \
+3 4 0 5 0 0 0 0 0 2 2 0 1 \
 4 5 0 0 0 0 0 0 0 3 3 0 1 \
-5 0 0 0 0 0 0 0 0 4 4 0 1
+5 0 0 0 0 0 0 0 0 4 4 0 1 \
+6 3 0 0 0 0 0 0 0 0 1 0 0
 
 # Publication
 
